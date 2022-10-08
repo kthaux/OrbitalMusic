@@ -91,3 +91,7 @@ fmod_editor.log
 
 /FmodProject/.cache/*
 /FmodProject/.user/*
+
+OrbitalMusic.sln
+*.vsconfig
+*.csproj
