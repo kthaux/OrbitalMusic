@@ -403,7 +403,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5cfe1ef39b6a6b41a67a3aa794efad8, type: 2}
+  - {fileID: 2100000, guid: 6825c836bd224de4d9e68d45dd987714, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655461559}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0, z: 10.41}
+  m_LocalPosition: {x: -0.07, y: 0, z: 6.94}
   m_LocalScale: {x: 2.7612092, y: 2.7612092, z: 2.7612092}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,7 +676,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5c3872f50cd083c47a294182702d08f7, type: 2}
+  - {fileID: 2100000, guid: 6825c836bd224de4d9e68d45dd987714, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1038,7 +1038,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d64a107e1e1a8b243a99783444ade9e2, type: 2}
+  - {fileID: 2100000, guid: 6825c836bd224de4d9e68d45dd987714, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1336,8 +1336,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 12
+  m_Intensity: 2
+  m_Range: 14
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1568,7 +1568,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6dfd0baefaa65b4d9c938f859d34940, type: 2}
+  - {fileID: 2100000, guid: 6825c836bd224de4d9e68d45dd987714, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
