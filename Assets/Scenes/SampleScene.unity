@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 173435572}
   - component: {fileID: 173435571}
   - component: {fileID: 173435570}
+  - component: {fileID: 173435574}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -253,6 +254,23 @@ Transform:
   m_Father: {fileID: 486306406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173435574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173435569}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e064c9306e643ea4697c79dc5d0c2198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 173435573}
+  minDist: 0.5
+  maxDist: 10
+  minRot: 0.05
+  maxRot: 1.5
 --- !u!1 &437698389
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +286,7 @@ GameObject:
   - component: {fileID: 437698394}
   - component: {fileID: 437698395}
   - component: {fileID: 437698396}
+  - component: {fileID: 437698397}
   m_Layer: 0
   m_Name: Novus
   m_TagString: Untagged
@@ -490,6 +509,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &437698397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437698389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b707b7d59f1b49a5ae84dad88ee3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 437698390}
 --- !u!1 &486306404
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +573,7 @@ GameObject:
   - component: {fileID: 655461562}
   - component: {fileID: 655461561}
   - component: {fileID: 655461566}
+  - component: {fileID: 655461567}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -763,6 +796,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &655461567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655461559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b707b7d59f1b49a5ae84dad88ee3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 655461560}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +919,7 @@ GameObject:
   - component: {fileID: 831771125}
   - component: {fileID: 831771124}
   - component: {fileID: 831771126}
+  - component: {fileID: 831771127}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1125,6 +1172,19 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &831771127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831771118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b707b7d59f1b49a5ae84dad88ee3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 831771122}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1493,7 @@ GameObject:
   - component: {fileID: 2068716552}
   - component: {fileID: 2068716551}
   - component: {fileID: 2068716553}
+  - component: {fileID: 2068716554}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -1655,3 +1716,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &2068716554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068716546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b707b7d59f1b49a5ae84dad88ee3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 2068716547}
