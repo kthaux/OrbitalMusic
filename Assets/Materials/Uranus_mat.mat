@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Saturn_mat
+  m_Name: Uranus_mat
   m_Shader: {fileID: 4800000, guid: e9e18fbf88ba9eb44ab0d683cd27c2a3, type: 3}
   m_ValidKeywords:
   - VIGNETTE_MASKED
@@ -16,9 +16,8 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -84,7 +83,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ClippingMask:
-        m_Texture: {fileID: 2800000, guid: ea37624af93d96943b2dd93ab64a1128, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
@@ -252,7 +251,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e87e3d84ef8b649469166e2afa88c1c5, type: 3}
+        m_Texture: {fileID: 2800000, guid: a43e3197e3af367458fa25637d0ace57, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Matcap:
@@ -486,8 +485,8 @@ Material:
     - _2ndShadeMapMask_Inverse: 0
     - _2nd_ShadeMapUV: 0
     - _AOStrength: 1
-    - _AlphaMod: 0.345
-    - _AlphaPremultiply: 1
+    - _AlphaMod: 0
+    - _AlphaPremultiply: 0
     - _AlphaToMask: 0
     - _AngleCompareTo: 0
     - _AngleMinAlpha: 0
@@ -616,7 +615,7 @@ Material:
     - _ContinuousDissolve: 0
     - _Cull: 2
     - _Curvature: 0
-    - _Cutoff: 0
+    - _Cutoff: 0.5
     - _DebugCameraData: 0
     - _DebugEnabled: 0
     - _DebugLightingData: 0
@@ -727,7 +726,7 @@ Material:
     - _DistortionStrengthAudioLinkBand: 0
     - _DitherGradient: 0.1
     - _DitheringEnabled: 0
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _Emission1CenterOutAddAudioLinkwidth: 1
     - _Emission1CenterOutAudioLinkWidth: 1
     - _EmissionBaseColorAsMap: 0
@@ -989,7 +988,7 @@ Material:
     - _MetallicTintMapUV: 0
     - _Mirror: 0
     - _MirrorTextureUV: 0
-    - _Mode: 3
+    - _Mode: 0
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _OcclusionStrength: 1
@@ -1232,7 +1231,7 @@ Material:
     - _Wriggle: 0
     - _WriggleSpeed: 0.28
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - __dirty: 1
     - _commentIfZero_EnableOutlinePass: 0
     - _glitterFrequencyLinearEmissive: 20
@@ -1359,7 +1358,7 @@ Material:
     - m_mainOptions: 1
     - m_outlineOptions: 0
     - m_renderingOptions: 0
-    - m_start_Alpha: 1
+    - m_start_Alpha: 0
     - m_start_BlackLight: 0
     - m_start_BonusSliders: 0
     - m_start_Bulge: 0
@@ -1385,7 +1384,7 @@ Material:
     - m_start_Hologram: 0
     - m_start_Iridescence: 0
     - m_start_IridescenceAudioLink: 0
-    - m_start_Lighting: 1
+    - m_start_Lighting: 0
     - m_start_MainHueShift: 0
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 0
@@ -1409,7 +1408,7 @@ Material:
     - m_start_VideoDebug: 0
     - m_start_VideoSettings: 0
     - m_start_Voronoi: 0
-    - m_start_ambientOcclusion: 1
+    - m_start_ambientOcclusion: 0
     - m_start_angularFade: 0
     - m_start_audioLink: 0
     - m_start_audioLinkDebug: 0
@@ -1438,7 +1437,7 @@ Material:
     - m_start_glitterRandom: 0
     - m_start_glowInDarkEmissionOptions: 0
     - m_start_glowInDarkEmissionOptions1: 0
-    - m_start_lightingAdvanced: 1
+    - m_start_lightingAdvanced: 0
     - m_start_lightingHSL: 0
     - m_start_lightingModifiers: 0
     - m_start_manualFlipbookControl: 0
@@ -1459,7 +1458,7 @@ Material:
     - m_start_ralivPenetrator: 0
     - m_start_reflectionRim: 0
     - m_start_rimHueShift: 0
-    - m_start_rimLightOptions: 1
+    - m_start_rimLightOptions: 0
     - m_start_rimWidthNoise: 0
     - m_start_scrollingEmissionOptions: 0
     - m_start_scrollingEmissionOptions1: 0
@@ -1530,7 +1529,7 @@ Material:
     - _BumpMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearcoatMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClippingMaskPan: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 1, b: 0.11260915, a: 1}
+    - _Color: {r: 0, g: 0.44111133, b: 1, a: 1}
     - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor1: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor2: {r: 1, g: 1, b: 1, a: 1}
