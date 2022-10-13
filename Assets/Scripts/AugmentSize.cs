@@ -12,8 +12,8 @@ public class AugmentSize : MonoBehaviour
     private Camera mainCam;
 
     private bool isMouseDragging;
-    private float min = 0.2f;
-    private float max = 10.0f;
+    public float minSize = 0.2f;
+    public float maxSize = 6.0f;
 
     private Vector3 MouseScreenPosition;
     private Vector3 MouseWorldPosition;
@@ -69,7 +69,7 @@ public class AugmentSize : MonoBehaviour
 
             //the absolute value makes the size augmentable both ways
             //take it off if you want one way resizing
-            float sizeScale = Mathf.Clamp(Mathf.Abs(MouseWorldPosition.y), min, max);
+            float sizeScale = Mathf.Clamp(Mathf.Abs(MouseWorldPosition.y), minSize, maxSize);
 
 
             //this changes size

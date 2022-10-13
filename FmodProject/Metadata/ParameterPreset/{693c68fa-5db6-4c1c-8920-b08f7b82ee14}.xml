@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{693c68fa-5db6-4c1c-8920-b08f7b82ee14}">
+		<property name="name">
+			<value>FilterCutoff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d8a6c2aa-49a0-44ad-826e-af67209f8b23}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ad65c898-6a27-4c65-b6ab-3c9cfbd247e0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ad65c898-6a27-4c65-b6ab-3c9cfbd247e0}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

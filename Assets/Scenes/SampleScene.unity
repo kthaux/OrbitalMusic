@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 4
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: bcd3417f7c4e30d40bdf0dc5002ae1fd, type: 2}
@@ -421,6 +421,8 @@ GameObject:
   - component: {fileID: 437698395}
   - component: {fileID: 437698396}
   - component: {fileID: 437698397}
+  - component: {fileID: 437698399}
+  - component: {fileID: 437698398}
   m_Layer: 0
   m_Name: Novus
   m_TagString: Untagged
@@ -656,6 +658,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anchor: {fileID: 437698390}
+  minSize: 0.2
+  maxSize: 6
+--- !u!114 &437698398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437698389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSample: 1
+  onlyTriggerInFront: 1
+  pitchMapping: 1
+  volumeMapping: 3
+  cutoffMapping: 0
+--- !u!114 &437698399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437698389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 113781400
+      Data2: 1193477437
+      Data3: -1189800799
+      Data4: -2070078339
+    Path: event:/Planet Samples
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: SoundID
+    Value: 11
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &437940887
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +839,7 @@ Transform:
   - {fileID: 1009989240}
   - {fileID: 112541229}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504017150
 GameObject:
@@ -854,7 +907,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655461559
 GameObject:
@@ -872,6 +925,8 @@ GameObject:
   - component: {fileID: 655461561}
   - component: {fileID: 655461566}
   - component: {fileID: 655461567}
+  - component: {fileID: 655461569}
+  - component: {fileID: 655461568}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -1107,6 +1162,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anchor: {fileID: 655461560}
+  minSize: 0.2
+  maxSize: 6
+--- !u!114 &655461568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655461559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSample: 1
+  onlyTriggerInFront: 1
+  pitchMapping: 1
+  volumeMapping: 3
+  cutoffMapping: 0
+--- !u!114 &655461569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655461559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 113781400
+      Data2: 1193477437
+      Data3: -1189800799
+      Data4: -2070078339
+    Path: event:/Planet Samples
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: SoundID
+    Value: 6
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1305,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &797253314
 GameObject:
@@ -1290,11 +1396,12 @@ GameObject:
   - component: {fileID: 831771121}
   - component: {fileID: 831771120}
   - component: {fileID: 831771119}
+  - component: {fileID: 831771129}
   - component: {fileID: 831771123}
-  - component: {fileID: 831771125}
   - component: {fileID: 831771124}
   - component: {fileID: 831771126}
   - component: {fileID: 831771127}
+  - component: {fileID: 831771128}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1395,21 +1502,23 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1330694937
-      Data2: 1144495640
-      Data3: 437489583
-      Data4: -971476528
-    Path: event:/Test Planet
+      Data1: -1012686996
+      Data2: 1084099052
+      Data3: 1657663392
+      Data4: 1376973516
+    Path: event:/Plannet Loops
   Event: 
-  PlayEvent: 1
-  StopEvent: 2
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 1.2488095
-  OverrideMaxDistance: 15
+  Params:
+  - Name: SoundID
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &831771124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,23 +1531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36f61c5efffe9d4584447a93e7bbaf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &831771125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831771118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e064c9306e643ea4697c79dc5d0c2198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 173435573}
-  minDist: 0.5
-  maxDist: 10
-  minRot: 0.05
-  maxRot: 1.5
 --- !u!96 &831771126
 TrailRenderer:
   serializedVersion: 2
@@ -1560,6 +1652,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anchor: {fileID: 831771122}
+  minSize: 0.2
+  maxSize: 6
+--- !u!114 &831771128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831771118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSample: 0
+  onlyTriggerInFront: 1
+  pitchMapping: 1
+  volumeMapping: 3
+  cutoffMapping: 0
+--- !u!114 &831771129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831771118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e064c9306e643ea4697c79dc5d0c2198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 173435573}
+  minDist: 0.5
+  maxDist: 10
+  minRot: 0.05
+  maxRot: 1.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,7 +1818,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1080108642}
-  - component: {fileID: 1080108643}
   m_Layer: 0
   m_Name: MoonPivot
   m_TagString: Untagged
@@ -1714,19 +1841,51 @@ Transform:
   m_Father: {fileID: 486306406}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1080108643
+--- !u!1 &1790016548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790016550}
+  - component: {fileID: 1790016549}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1790016549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080108641}
+  m_GameObject: {fileID: 1790016548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75796949600582f4b88b60da47ce66cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 0891b62d265676a4081976a9b0c71828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CycleTime: 4
+  planetSounds: []
+--- !u!4 &1790016550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790016548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.004382, y: 12.527649, z: -7.2082057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878563441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1981,7 @@ RectTransform:
   m_Children:
   - {fileID: 797253315}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1984,6 +2143,8 @@ GameObject:
   - component: {fileID: 2068716551}
   - component: {fileID: 2068716553}
   - component: {fileID: 2068716554}
+  - component: {fileID: 2068716556}
+  - component: {fileID: 2068716555}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -2219,3 +2380,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anchor: {fileID: 2068716547}
+  minSize: 0.2
+  maxSize: 6
+--- !u!114 &2068716555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068716546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSample: 1
+  onlyTriggerInFront: 1
+  pitchMapping: 1
+  volumeMapping: 3
+  cutoffMapping: 0
+--- !u!114 &2068716556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068716546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 113781400
+      Data2: 1193477437
+      Data3: -1189800799
+      Data4: -2070078339
+    Path: event:/Planet Samples
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: SoundID
+    Value: 10
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

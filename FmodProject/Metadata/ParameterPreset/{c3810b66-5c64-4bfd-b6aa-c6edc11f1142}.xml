@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c3810b66-5c64-4bfd-b6aa-c6edc11f1142}">
+		<property name="name">
+			<value>SoundID</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d8a6c2aa-49a0-44ad-826e-af67209f8b23}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f8317946-a2cf-4ef9-8164-7c7194460841}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f8317946-a2cf-4ef9-8164-7c7194460841}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>16</value>
+		</property>
+		<property name="initialValue">
+			<value>8</value>
+		</property>
+	</object>
+</objects>

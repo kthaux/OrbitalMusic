@@ -24,11 +24,13 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        AudioManager.instance.UnpauseAllPlanets();
     }
 
     void Pause(){
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        AudioManager.instance.PauseAllPlanets();
     }
 }
