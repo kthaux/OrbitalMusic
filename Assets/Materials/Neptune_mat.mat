@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sun_mat
+  m_Name: Neptune_mat
   m_Shader: {fileID: 4800000, guid: e9e18fbf88ba9eb44ab0d683cd27c2a3, type: 3}
   m_ValidKeywords:
-  - USER_LUT
   - VIGNETTE_MASKED
+  - _GLOSSYREFLECTIONS_OFF
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
@@ -156,11 +156,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionFlowTexture:
-        m_Texture: {fileID: 2800000, guid: b60b8211733a76c4b9a4322bfcf0b581, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionFlowTexture1:
-        m_Texture: {fileID: 2800000, guid: f70e10900053fb44986fb2d3d6bf8454, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionMask:
@@ -252,7 +252,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 71c08610deb243144888703479205c12, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0f65047a52bd6484d968e94f2c6777cb, type: 3}
         m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _Matcap:
@@ -780,7 +780,7 @@ Material:
     - _EnableClearCoat: 0
     - _EnableDissolve: 0
     - _EnableDissolveAudioLink: 0
-    - _EnableDistortion: 1
+    - _EnableDistortion: 0
     - _EnableDistortionAudioLink: 0
     - _EnableEmission: 0
     - _EnableEmission1: 0
@@ -800,7 +800,7 @@ Material:
     - _EnableMirrorTexture: 0
     - _EnablePathing: 0
     - _EnableRandom: 0
-    - _EnableRimLighting: 0
+    - _EnableRimLighting: 1
     - _EnableSSS: 0
     - _EnableScifiSpawnIn: 0
     - _EnableSpecular: 0
@@ -908,7 +908,7 @@ Material:
     - _LightingAdditiveLimitIntensity: 0
     - _LightingAdditiveMaxIntensity: 1
     - _LightingAdditivePassthrough: 0.5
-    - _LightingAdditiveType: 1
+    - _LightingAdditiveType: 0
     - _LightingDetailShadowsEnabled: 0
     - _LightingDetailShadowsUV: 0
     - _LightingDetailStrength: 1
@@ -922,7 +922,7 @@ Material:
     - _LightingIndirectColorMode: 0
     - _LightingMinLightBrightness: 0
     - _LightingMinShadowBrightnessRatio: 0
-    - _LightingMode: 4
+    - _LightingMode: 0
     - _LightingMonochromatic: 0
     - _LightingOnlyUnityShadows: 0
     - _LightingRampType: 0
@@ -941,7 +941,7 @@ Material:
     - _MainColorAdjustTextureUV: 0
     - _MainDistanceFadeMax: 0
     - _MainDistanceFadeMin: 0
-    - _MainEmissionStrength: 1.09
+    - _MainEmissionStrength: 0
     - _MainFadeTextureUV: 0
     - _MainFadeType: 1
     - _MainHueShift: 0
@@ -952,7 +952,7 @@ Material:
     - _MainMinAlpha: 0
     - _MainMipScale: 0.25
     - _MainShadowClipMod: 0
-    - _MainTextureUV: 4
+    - _MainTextureUV: 0
     - _MainUseVertexColorAlpha: 0
     - _MainVertexColoring: 0
     - _MainVertexColoringLinearSpace: 1
@@ -1087,10 +1087,10 @@ Material:
     - _RimLightNormal: 1
     - _RimLightingInvert: 0
     - _RimMaskUV: 0
-    - _RimSharpness: 0.25
+    - _RimSharpness: 0
     - _RimStrength: 5
     - _RimTexUV: 0
-    - _RimWidth: 0.25
+    - _RimWidth: 0.428
     - _RimWidthNoiseStrength: 0.1
     - _RimWidthNoiseTextureUV: 0
     - _SSSDistortion: 1
@@ -1245,7 +1245,7 @@ Material:
     - m_ParallaxMap: 0
     - m_Patreon: 0
     - m_PostProcessing: 0
-    - m_Special_Effects: 1
+    - m_Special_Effects: 0
     - m_end_Alpha: 0
     - m_end_BlackLight: 0
     - m_end_BonusSliders: 0
@@ -1385,7 +1385,7 @@ Material:
     - m_start_Hologram: 0
     - m_start_Iridescence: 0
     - m_start_IridescenceAudioLink: 0
-    - m_start_Lighting: 0
+    - m_start_Lighting: 1
     - m_start_MainHueShift: 0
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 0
@@ -1438,7 +1438,7 @@ Material:
     - m_start_glitterRandom: 0
     - m_start_glowInDarkEmissionOptions: 0
     - m_start_glowInDarkEmissionOptions1: 0
-    - m_start_lightingAdvanced: 0
+    - m_start_lightingAdvanced: 1
     - m_start_lightingHSL: 0
     - m_start_lightingModifiers: 0
     - m_start_manualFlipbookControl: 0
@@ -1530,7 +1530,7 @@ Material:
     - _BumpMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearcoatMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClippingMaskPan: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.34016496, b: 0, a: 1}
+    - _Color: {r: 0.74792814, g: 0, b: 1, a: 1}
     - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor1: {r: 1, g: 1, b: 1, a: 1}
     - _DecalColor2: {r: 1, g: 1, b: 1, a: 1}
@@ -1570,7 +1570,7 @@ Material:
     - _DistortionStrengthAudioLink: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionCenterOutAddAudioLink: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionCenterOutAddAudioLink1: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0.6509434, g: 0.27518287, b: 0.16826269, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor1: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionMap1Pan: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionMapPan: {r: 0, g: 0, b: 0, a: 0}
