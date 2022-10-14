@@ -443,6 +443,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Planets
+  - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
