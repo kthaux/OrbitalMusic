@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 173435573}
-  minDist: 0.5
+  minDist: 2
   maxDist: 10
   minRot: 0.05
   maxRot: 1.5
@@ -999,6 +999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashOnTrigger: 1
   isSample: 1
   onlyTriggerInFront: 1
   pitchMapping: 1
@@ -1452,7 +1453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 173435573}
-  minDist: 0.5
+  minDist: 2
   maxDist: 10
   minRot: 0.05
   maxRot: 1.5
@@ -1654,6 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashOnTrigger: 1
   isSample: 1
   onlyTriggerInFront: 1
   pitchMapping: 1
@@ -2317,6 +2319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashOnTrigger: 1
   isSample: 0
   onlyTriggerInFront: 1
   pitchMapping: 1
@@ -2335,7 +2338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 173435573}
-  minDist: 0.5
+  minDist: 2
   maxDist: 10
   minRot: 0.05
   maxRot: 1.5
@@ -2524,7 +2527,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 120
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2686,6 +2689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashOnTrigger: 1
   isSample: 1
   onlyTriggerInFront: 1
   pitchMapping: 1
@@ -2869,7 +2873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 173435573}
-  minDist: 0.5
+  minDist: 2
   maxDist: 10
   minRot: 0.05
   maxRot: 1.5
@@ -4167,7 +4171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 173435573}
-  minDist: 0.5
+  minDist: 2
   maxDist: 10
   minRot: 0.05
   maxRot: 1.5
@@ -4306,6 +4310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffafbca8719394e44921e0955b7612f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashOnTrigger: 1
   isSample: 1
   onlyTriggerInFront: 1
   pitchMapping: 1

@@ -18,6 +18,9 @@ public class PlanetSoundController : MonoBehaviour
     private FMODUnity.StudioEventEmitter emitter;
     private Rotate rotater;
     private AugmentSize sizer;
+    private Renderer renderer;
+    Color originalColor;
+    public bool flashOnTrigger = true;
 
     public bool isSample = false;
     public bool onlyTriggerInFront = true;
@@ -58,7 +61,22 @@ public class PlanetSoundController : MonoBehaviour
         sizer = GetComponent<AugmentSize>();
         lastPos = gameObject.transform.position;
 
+        renderer = GetComponent<Renderer>();
+        originalColor = renderer.material.GetColor("_Color");
+
         AudioManager.instance.planetSounds.Add(this);
+    }
+
+    void Flash()
+    {
+        renderer.material.SetColor("_Color", Color.white);
+        StartCoroutine(EndFlash());
+    }
+
+    IEnumerator EndFlash()
+    {
+        yield return new WaitForSeconds(0.25f);
+        renderer.material.SetColor("_Color", originalColor);
     }
 
     // Update is called once per frame
@@ -156,6 +174,7 @@ public class PlanetSoundController : MonoBehaviour
             if (ShouldTriggerSample())
             {
                 // trigger some sort of flash for the planet visually
+                if (flashOnTrigger) Flash();
                 emitter.Play();
             }
         }
