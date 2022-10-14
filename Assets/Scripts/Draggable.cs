@@ -7,6 +7,10 @@ public class Draggable : MonoBehaviour
     Vector3 mousePosOffset;
     private float mouseZCoordinate;
     private Vector3 pos;
+    private bool isHeld = false;
+
+    public bool IsHeld() { return isHeld; }
+    //private float soundChangeCooldown = -1f;
 
     //utility function to translate mouse postion to world position
     private Vector3 GetMouseWorldPosition(){
@@ -16,12 +20,17 @@ public class Draggable : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+
+    }
+
     private void OnMouseDown(){
         GetComponent<Rotate>().enabled = false;
+        isHeld = true;
         mouseZCoordinate = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         //captures mouse offset so player can click on any part of the planet body
         mousePosOffset = gameObject.transform.position - GetMouseWorldPosition();
-        
     }
 
 
@@ -40,5 +49,6 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp(){
         GetComponent<Rotate>().enabled = true;
+        isHeld = false;
     }
 }

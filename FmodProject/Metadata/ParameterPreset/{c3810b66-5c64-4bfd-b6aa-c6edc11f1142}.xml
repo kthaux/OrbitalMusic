@@ -19,7 +19,7 @@
 			<value>1</value>
 		</property>
 		<property name="maximum">
-			<value>16</value>
+			<value>19</value>
 		</property>
 		<property name="initialValue">
 			<value>8</value>

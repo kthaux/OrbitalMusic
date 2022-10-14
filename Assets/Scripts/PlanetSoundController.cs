@@ -19,10 +19,13 @@ public class PlanetSoundController : MonoBehaviour
     private Rotate rotater;
     private AugmentSize sizer;
     private Renderer renderer;
+    private Draggable dragger;
     Color originalColor;
     public bool flashOnTrigger = true;
 
-    public bool isSample = false;
+    private float overrideSampleID = -1;
+
+    public bool isSample = true;
     public bool onlyTriggerInFront = true;
 
     private Vector3 lastPos;
@@ -30,6 +33,15 @@ public class PlanetSoundController : MonoBehaviour
     public ParamMappingSource pitchMapping = ParamMappingSource.Distance;
     public ParamMappingSource volumeMapping = ParamMappingSource.Size;
     public ParamMappingSource cutoffMapping = ParamMappingSource.None;
+
+    public void PlaySound()
+    {
+        emitter.Play();
+        if (overrideSampleID != -1)
+            emitter.EventInstance.setParameterByName("SoundID", overrideSampleID);
+        // trigger some sort of flash for the planet visually
+        if (flashOnTrigger) Flash();
+    }
 
     public void Pause() { emitter.EventInstance.setPaused(true); }
     public void Unpause() { emitter.EventInstance.setPaused(false); }
@@ -59,6 +71,7 @@ public class PlanetSoundController : MonoBehaviour
         emitter = GetComponent<FMODUnity.StudioEventEmitter>();
         rotater = GetComponent<Rotate>();
         sizer = GetComponent<AugmentSize>();
+        dragger = GetComponent<Draggable>();
         lastPos = gameObject.transform.position;
 
         renderer = GetComponent<Renderer>();
@@ -82,6 +95,46 @@ public class PlanetSoundController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dragger.IsHeld())
+        {
+            const int nSounds = 18;
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                float curID;
+                emitter.EventInstance.getParameterByName("SoundID", out curID);
+                float newID = 1;
+                if (curID >= nSounds)
+                    newID = 1;
+                else
+                    newID = curID + 1;
+                overrideSampleID = newID;
+                if (emitter.IsPlaying()) emitter.Stop();
+                PlaySound();
+                if (overrideSampleID > 3)
+                    isSample = true;
+                else
+                    isSample = false;
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                float curID;
+                emitter.EventInstance.getParameterByName("SoundID", out curID);
+                float newID = 1;
+                if (curID <= 1)
+                    newID = nSounds;
+                else
+                    newID = curID - 1;
+                overrideSampleID = newID;
+                if (emitter.IsPlaying()) emitter.Stop();
+                PlaySound();
+                if (overrideSampleID > 3)
+                    isSample = true;
+                else
+                    isSample = false;
+            }
+        }
+
         // calculate values and compute mappings
         float minDist = rotater.minDist;
         float maxDist = rotater.maxDist;
@@ -173,9 +226,8 @@ public class PlanetSoundController : MonoBehaviour
             // play sample based on when the planet crosses you
             if (ShouldTriggerSample())
             {
-                // trigger some sort of flash for the planet visually
-                if (flashOnTrigger) Flash();
-                emitter.Play();
+                //emitter.Play();
+                PlaySound();
             }
         }
         else
@@ -183,7 +235,8 @@ public class PlanetSoundController : MonoBehaviour
             // loop sound indefinitely
             if (!emitter.IsPlaying())
             {
-                emitter.Play();
+                //emitter.Play();
+                PlaySound();
             }
         }
     }
