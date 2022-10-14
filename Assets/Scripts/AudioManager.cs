@@ -8,20 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public List<PlanetSoundController> planetSounds = new List<PlanetSoundController>();
 
-    public void PauseAllPlanets()
-    {
-        foreach (PlanetSoundController planet in planetSounds)
-        {
-            planet.Pause();
-        }
-    }
-    public void UnpauseAllPlanets()
-    {
-        foreach (PlanetSoundController planet in planetSounds)
-        {
-            planet.Unpause();
-        }
-    }
+    string masterBusString = "bus:/";
 
     // Start is called before the first frame update
     void Awake()
@@ -46,5 +33,32 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PauseAllPlanets()
+    {
+        foreach (PlanetSoundController planet in planetSounds)
+        {
+            planet.Pause();
+        }
+    }
+    public void UnpauseAllPlanets()
+    {
+        foreach (PlanetSoundController planet in planetSounds)
+        {
+            planet.Unpause();
+        }
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        SetBusVolume(masterBusString, volume);
+    }
+
+    private void SetBusVolume(string busString, float volume)
+    {
+        FMOD.Studio.Bus bus;
+        bus = FMODUnity.RuntimeManager.GetBus(busString);
+        bus.setVolume(volume);
     }
 }

@@ -12,17 +12,23 @@ public class BeginMenu : MonoBehaviour
     void Start()
     {
         beginMenuUI.SetActive(true);
-        GameStarted();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!Started)
+            {
+                StartGame();
+            }
+        }
     }
 
-    public void GameStarted()
+    public void StartGame()
     {
+        beginMenuUI.SetActive(false);
         Started = true;
     }
 }
